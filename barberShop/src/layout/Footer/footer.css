@@ -1,0 +1,142 @@
+.footer {
+  background: #fff;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 40px 30px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  color: #f68c1f;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.newsletter {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 10px 16px;
+  border: none;
+  background: #f68c1f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #e27911;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f68c1f;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h4 {
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f68c1f;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-bottom .highlight {
+  color: #f68c1f;
+  font-weight: bold;
+}
+
+.footer-bottom .brand {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}

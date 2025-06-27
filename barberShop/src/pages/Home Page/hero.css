@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, .hero h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.para-content {
+  color: white !important;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+  animation: fadeInUp 1s ease-out;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideInDown 0.8s ease-out;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.hero-buttons {
+  animation: fadeIn 1.4s ease-out;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  margin: 0 10px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+  min-width: 150px;
+}
+
+.hero-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.primary-btn {
+  background-color: #f8f7f6 !important;
+  color: black !important;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: orange !important;
+}
+
+.fa-star {
+  font-size: 10px;
+  color: orange;
+  padding: 3px;
+}
+
+.block-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  margin-top: 16px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.check-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(34, 33, 33);
+  padding: 10px;
+  margin: auto;
+  gap: 0.5rem;
+}
+
+.check-links > button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.check-links > button:hover {
+  background-color: #eab308;
+  transform: scale(1.1);
+}
+
+/* Mobile & Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .check-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .check-links > button {
+    width: 90%;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
+
+  .overlay{
+  background-color: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

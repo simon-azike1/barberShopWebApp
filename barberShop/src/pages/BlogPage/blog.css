@@ -1,0 +1,126 @@
+/* Blog Page Styles */
+
+.blog-page {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.blog-hero {
+  text-align: center;
+  background-color: #000;
+  padding: 5rem 2rem 4rem;
+  border-bottom: 2px solid orange;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-subtext {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background-color: orange;
+  color: black;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e65c00;
+  transform: translateY(-4px);
+}
+
+/* Blog Grid Section */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background-color: #111;
+}
+
+/* Blog Card */
+.blog-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.15);
+  transition: transform 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-content h3 {
+  color: orange;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
