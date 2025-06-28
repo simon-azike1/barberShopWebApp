@@ -18,9 +18,10 @@ const Hero = () => {
 
       <div className="overlay">
         <div className="hero-content">
-          <h1>Sharp Looks. Smooth Experience.</h1>
+          <h1>Smooth Experience.</h1>
           <p className="para-content">
-            Your go-to barber shop for classic and modern styles. We specialize in delivering premium haircuts, beard trims, and grooming services for the modern gentleman. Walk in for style, walk out with confidence.
+            Your go-to barber shop for classic and modern styles. 
+            
           </p>
           <div className="hero-buttons">
             <Link to="/contact">
