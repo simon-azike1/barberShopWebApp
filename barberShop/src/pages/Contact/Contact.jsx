@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "emailjs-com"; 
 import Header from "../../layout/Header/Header";
 import Footer from "../../layout/Footer/Footer";
 import './contact.css';
@@ -15,11 +15,11 @@ const Contact = () => {
   });
   const formRef = useRef();
 
-  const nextStep = () => setStep(s => Math.min(s + 1, 3));
-  const prevStep = () => setStep(s => Math.max(s - 1, 1));
+  const nextStep = () => setStep((s) => Math.min(s + 1, 3));
+  const prevStep = () => setStep((s) => Math.max(s - 1, 1));
 
-  const handleChange = (e) => { 
-    setFormData(prev => ({
+  const handleChange = (e) => {
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
@@ -29,17 +29,26 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_4bksq8k",    
-      "template_njj631a",  
-      "xL6_CntdprOU1DvCJ"  
+      "service_4bksq8k",      
+      "template_njj631a",    
+      formRef.current,        
+      "xL6_CntdprOU1DvCJ"   
     )
     .then(() => {
       alert("Message sent successfully!");
       formRef.current.reset();
-      setFormData({ name: "", email: "", phone: "", time: "", message: "" });
-      setStep(1);  
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        time: "",
+        message: ""
+      });
+      setStep(1);
     })
-    .catch(() => alert("Failed to send message. Please try again."));
+    .catch(() => {
+      alert("Failed to send message. Please try again.");
+    });
   };
 
   return (
@@ -157,10 +166,9 @@ const Contact = () => {
                     Back
                   </button>
                   <button
-                    type="submit"
+                    type="submit"   
                     className="submit-btn"
                     style={{ flex: 1 }}
-                    onClick={sendEmail}
                   >
                     Send Message
                   </button>
