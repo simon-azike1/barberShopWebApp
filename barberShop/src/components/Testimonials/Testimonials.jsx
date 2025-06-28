@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import images from '@/assets/Images/custmer-1.jpg';
+import images from '@/assets/Images/customer-1.JPG';
 import images4 from '@/assets/Images/Img-4.jpg';
 import images3 from '@/assets/Images/Img-3.jpg';
 import './testimonials.css';
