@@ -37,7 +37,7 @@ const Contact = () => {
       alert("Message sent successfully!");
       formRef.current.reset();
       setFormData({ name: "", email: "", phone: "", time: "", message: "" });
-      setStep(1);  // Reset to step 1 after sending
+      setStep(1);  
     })
     .catch(() => alert("Failed to send message. Please try again."));
   };
@@ -160,6 +160,7 @@ const Contact = () => {
                     type="submit"
                     className="submit-btn"
                     style={{ flex: 1 }}
+                    onClick={sendEmail}
                   >
                     Send Message
                   </button>
