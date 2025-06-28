@@ -59,7 +59,7 @@ function AboutPreview() {
             <div className="mission-text">
               <h2>Our Mission</h2>
               <p>
-                At Barber Shop, our mission is to redefine grooming by combining creativity,
+                At Mouad Icap, our mission is to redefine grooming by combining creativity,
                 craftsmanship, and care. We provide a comfortable space where every
                 client feels valued and leaves renewed in confidence.
               </p>

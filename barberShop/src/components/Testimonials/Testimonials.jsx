@@ -9,7 +9,7 @@ const testimonialData = [
     id: 1,
     name: 'Simon',
     role: 'My best Barber in Morocco',
-    content: 'Best barber shop in town! The team at Barber shop delivers exceptional service every time.',
+    content: 'Best barber shop in town! The team at Mouad Icap delivers exceptional service every time.',
     image: images
   },
   {

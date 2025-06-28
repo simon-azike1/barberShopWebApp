@@ -64,7 +64,7 @@ function Services() {
       <div className="hero-section">
         <h1 className="hero-heading">Your Style, Our Passion</h1>
         <p className="hero-text">
-          At Barber Shop, we offer a range of grooming services tailored for the modern individual.
+          At Mouad Icap, we offer a range of grooming services tailored for the modern individual.
           Our experienced team ensures every cut and treatment is top-tier.
         </p>
         <button className="hero-btn" onClick={serviceScrollTo}>Check our Services</button>

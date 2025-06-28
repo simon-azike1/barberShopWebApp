@@ -67,7 +67,7 @@ const About = () => {
             <div className="section-card">
               <h2 className="section-title">Our Story</h2>
               <p className="section-text">
-                Since 1998, Barber Shop has been more than a grooming spot. It's a legacy of style,
+                Since 2019, Mouad Icap has been more than a grooming spot. It's a legacy of style,
                 culture, and community. What began as a small corner shop is now a space of timeless fashion.
                 Our journey started with a simple vision: to create a place where tradition meets innovation,
                 where every client leaves feeling confident and refreshed. <br />

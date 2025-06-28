@@ -29,10 +29,9 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_4bksq8k",    // Your Service ID
-      "template_njj631a",   // Your Template ID
-      formRef.current,
-      "xL6_CntdprOU1DvCJ"  // Your Public Key
+      "service_4bksq8k",    
+      "template_njj631a",  
+      "xL6_CntdprOU1DvCJ"  
     )
     .then(() => {
       alert("Message sent successfully!");

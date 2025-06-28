@@ -11,7 +11,7 @@ function Header() {
       <Link   to ="/"><img src={logo} alt="Logo"/>
       </Link>
        <Link to="/"  style={{textDecoration:"none"}}>
-       <p className="shop-name">Barber Shop</p>
+       <p className="shop-name">Mouad.Icap</p>
        </Link> 
       </div>
 
@@ -30,7 +30,7 @@ function Header() {
           <li><Link to="/service">Services</Link></li>
           <li><Link to="/contact">Contact</Link ></li>
           <li><Link to="/blog">Blog</Link></li>
-          <li  className="book"><Link to="book">Book appointment</Link></li>
+          <li  className="book"><Link to="/book">Book appointment</Link></li>
         </ul>
       </nav>
     </header>

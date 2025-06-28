@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import './blog.css'
 
 
+
 const Blog = () => {
    const blogPosts = [
     {
@@ -32,7 +33,7 @@ const Blog = () => {
         <section className="blog-hero">
           <h1 className="hero-heading">Our Blog</h1>
           <p className="hero-text">
-            Welcome to the heart of FlowBarb, where grooming meets lifestyle. Discover expert tips,
+            Welcome to the heart of Mouad Icap, where grooming meets lifestyle. Discover expert tips,
             inspirational transformations, industry insights, and stories that shape the modern barbering experience.
           </p>
         
