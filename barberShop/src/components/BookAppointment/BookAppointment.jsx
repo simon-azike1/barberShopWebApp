@@ -36,12 +36,14 @@ const Appointment = () => {
     });
   };
 
+  const color = "black";
+  const fontStyle = "italic";
   return (
     <>
     <Header/>
      <div className="appointment-container">
-      <h1>Book an Appointment</h1>
-      <p className="subtitle">
+      <h1 style={{color} }>Book an Appointment</h1>
+      <p className="subtitle" style={{ fontStyle }}>
         Let us know your preferred time and service. We’ll confirm shortly.
       </p>
 

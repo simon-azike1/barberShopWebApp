@@ -39,19 +39,19 @@ function Services() {
     },
     {
       title: "Kids' Haircuts",
-      description: "Fun, friendly grooming experience for young ones.",
+      description: "Where kids love haircuts and parents love the results!",
       icon: "🧔",
       image: Images5,
     },
     {
       title: "Men Haircut",
-      description: "Fun, friendly grooming experience for young ones.",
+      description: "Precision haircuts for the modern gentleman.",
       icon: "🧖‍♂️ ",
       image: Images7,
     },
     {
       title: "Youth Classic Cut",
-      description: "Fun, friendly grooming experience for young ones.",
+      description: "Classic style for boys and young men fresh and age-appropriate.",
       icon: "🧖‍♀️",
       image: Images8,
     }

@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="overlay">
         <div className="hero-content">
-          <h1>Smooth Experience.</h1>
+          <h1 style={{color:"white"}}>Smooth Experience.</h1>
           <p className="para-content">
             Your go-to barber shop for classic and modern styles. 
             
@@ -40,14 +40,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="check-links">
-        <button className="btn"><i className="fab fa-kickstarter-k"></i> Kanba</button>
-        <button><i className="fab fa-envira"></i> Greenish</button>
-        <button><i className="fab fa-facebook-f"></i> Facebook</button>
-        <button><i className="fas fa-video"></i> Zoomtv</button>
-        <button><i className="fas fa-water"></i> Waveless</button>
       </div>
     </section>
   );
