@@ -41,7 +41,7 @@ npm run dev
 
 ## Project Structure
 ```
-barber-website/
+barberShop/
 │
 ├── public/          # Static assets
 ├── src/             # React source code
