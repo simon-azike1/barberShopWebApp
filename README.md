@@ -39,19 +39,6 @@ bash
 npm run dev
 
 
-## Project Structure
-```
-barberShop/
-│
-├── public/          # Static assets
-├── src/             # React source code
-│   ├── components/  # Reusable components (Gallery, Services, ContactForm)
-│   ├── pages/       # Pages (Home, About, Contact)
-│   ├── App.js       # Main app component
-│   └── index.js     # React DOM rendering
-├── package.json     # Project metadata and dependencies
-└── README.md        # This file
-
 
 ## Next Steps
 
